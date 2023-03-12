@@ -1,0 +1,34 @@
+[package]
+name = "app-manager"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0.69", features = ["backtrace"] }
+cached = "0.42.0"
+clap = { version = "4.1.6", features = ["derive"] }
+deno_ast = { version = "0.24.0", features = ["typescript", "transpiling", "anyhow"] }
+extrasafe = "0.1.2"
+hex = "0.4.3"
+hmac-sha256 = "1.1.6"
+lazy_static = "1.4.0"
+quick-js = { version = "0.4.1", features = ["bigint", "chrono"] }
+rand = "0.8.5"
+regex = "1.7.1"
+schemars = "0.8.11"
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.93"
+serde_repr = "0.1.11"
+serde_yaml = "0.9.17"
+tera = { version = "1.17.1", default-features = false, features = ["builtins", "rand"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+
+[build-dependencies]
+esbuild-rs = "0.13.8"
+
+[dev-dependencies]
+pretty_assertions = "1.3.0"
+

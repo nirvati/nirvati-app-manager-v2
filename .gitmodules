@@ -1,0 +1,3 @@
+[submodule "nirvati"]
+	path = nirvati
+	url = https://github.com/nirvati/nirvati-core

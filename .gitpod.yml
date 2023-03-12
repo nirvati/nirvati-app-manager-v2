@@ -1,0 +1,7 @@
+vscode:
+  extensions:
+    - rust-lang.rust-analyzer
+
+tasks:
+  - init: sudo apt install -y libseccomp-dev
+    command: cargo build
